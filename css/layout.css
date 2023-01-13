@@ -11,25 +11,29 @@ body {
   overflow: hidden;
   height: 80px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   background-color: #fff;
   box-sizing: border-box;
 }
-.header logo--img {
+.header .logo {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.header .logo--img {
   height: 36px;
 }
 .header .gnb__list {
   display: flex;
 }
-.header .gnb__list > li {
-  padding: 26px 0;
-  width: 178px;
-}
 .header .gnb__list > li > a {
   font-size: 19px;
   font-weight: 500;
-  padding: 26px 0;
+  padding: 0 40px;
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 .header .gnb__list--sub {
   margin-top: 52px;

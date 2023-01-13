@@ -15,11 +15,14 @@ body {
   overflow: hidden;
   height: 80px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   background-color: #fff;
   box-sizing: border-box;
-  logo {
+  .logo {
+    display: flex;
+    height: 80px;
+    align-items: center;
     &--img {
       height: 36px;
     }
@@ -29,12 +32,13 @@ body {
       display: flex;
 
       > li {
-        padding: 26px 0;
-        width: 178px;
         > a {
           font-size: 19px;
           font-weight: 500;
-          padding: 26px 0;
+          padding: 0 40px;
+          height: 80px;
+          display: flex;
+          align-items: center;
         }
       }
       &--sub {
