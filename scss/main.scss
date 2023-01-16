@@ -3,6 +3,7 @@
 
 .section {
   background-color: #fff;
+  padding: 125px 400px;
 }
 
 .visual {
@@ -63,7 +64,6 @@
   flex-direction: column;
   position: relative;
   margin-top: 100vh;
-  padding: 125px 400px;
   text-align: center;
   align-content: center;
 
@@ -91,11 +91,29 @@
 
   &-list {
     &-sub {
-      width: 100%;
+      width: 25%;
+      position: absolute;
       li {
+        width: 100%;
         display: inline-block;
-        padding: 0 25px;
       }
     }
+  }
+}
+
+.news {
+  position: relative;
+  // color: #fff;
+  display: flex;
+  width: 100%;
+  .background {
+    width: 100%;
+    height: 480px;
+  }
+  &-txt1 {
+    flex: 1;
+    background-color: #ed1c24;
+    text-align: left;
+    width: 100%;
   }
 }

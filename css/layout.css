@@ -16,6 +16,7 @@ body {
   background-color: #fff;
   box-sizing: border-box;
   top: 0;
+  transition: all 0.5s ease;
 }
 .header .logo {
   display: flex;
@@ -26,12 +27,11 @@ body {
   height: 36px;
 }
 .header .gnb {
-  position: relative;
-  height: 100%;
-  width: auto;
+  display: flex;
 }
 .header .gnb__list {
   display: flex;
+  width: 100%;
 }
 .header .gnb__list > li > a {
   font-size: 19px;
@@ -41,10 +41,13 @@ body {
   display: flex;
   align-items: center;
 }
+.header .gnb__list > li > a:hover {
+  color: red;
+  transition: all 0.5s ease;
+}
 .header .gnb__list--sub {
   padding-top: 25px;
   text-align: center;
-  width: 100%;
   color: #fff;
 }
 .header .gnb__list--sub li {
@@ -54,6 +57,13 @@ body {
   display: flex;
   height: 80px;
   align-items: center;
+}
+.header .language p {
+  font-size: 12px;
+  margin: 0 5px;
+}
+.header .language a {
+  font-weight: 700;
 }
 .header.on {
   height: 380px;

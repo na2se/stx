@@ -20,6 +20,8 @@ body {
   background-color: #fff;
   box-sizing: border-box;
   top: 0; // 아래 메인내용들 추가되면서 사라지는 헤더를 top:0에 고정
+  transition: all 0.5s ease;
+
   .logo {
     display: flex;
     height: 80px;
@@ -29,12 +31,11 @@ body {
     }
   }
   .gnb {
-    position: relative;
-    // width: 100%;
-    height: 100%;
-    width: auto;
+    display: flex;
+
     &__list {
       display: flex;
+      width: 100%;
 
       > li {
         > a {
@@ -44,13 +45,16 @@ body {
           height: 80px;
           display: flex;
           align-items: center;
+          &:hover {
+            color: red;
+            transition: all 0.5s ease;
+          }
         }
       }
       &--sub {
         padding-top: 25px;
         text-align: center;
 
-        width: 100%;
         // height: 280px;
         // background-color: rgba(0, 0, 0, 0.5);
         color: #fff;
@@ -64,6 +68,13 @@ body {
     display: flex;
     height: 80px;
     align-items: center;
+    p {
+      font-size: 12px;
+      margin: 0 5px;
+    }
+    a {
+      font-weight: 700;
+    }
   }
   &.on {
     height: 380px;
