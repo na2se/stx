@@ -67,9 +67,14 @@ body {
           display: flex;
           align-items: center;
           height: $h;
+          width: 180px;
           padding: 0 40px;
           font-size: 18px;
           font-weight: 700;
+          &:hover {
+            transition: 0.25s ease;
+            color: red;
+          }
         }
       }
       &--sub {
