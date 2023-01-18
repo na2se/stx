@@ -5,13 +5,8 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  // box-sizing: content-box;
 }
-h2 {
-  font-size: 44px;
-  font-weight: 700;
-  margin-bottom: 50px;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -28,7 +23,6 @@ p {
 img {
   vertical-align: top;
 }
-
 button {
   border: none;
   outline: none;
