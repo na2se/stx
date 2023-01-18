@@ -22,7 +22,13 @@ btnAuto.addEventListener("click", function () {
   }
 });
 
-gsap.from(".main-visual__txt .char", { opacity: 0, y: 100, duration: 1, stagger: 0.02, ease: "power4" });
+gsap.from(".main-visual__txt .char", {
+  opacity: 0,
+  y: 100,
+  duration: 1,
+  stagger: 0.02,
+  ease: "power4",
+});
 const mainVisualSwiper = new Swiper(".main-visual", {
   loop: true,
   speed: 1000,
@@ -35,4 +41,9 @@ const mainVisualSwiper = new Swiper(".main-visual", {
     type: "bullets",
     clickable: true,
   },
+});
+
+const btnDown = document.querySelector(".btn-down");
+btnDown.addEventListener("click", function () {
+  window.scrollTo({ top: 900, behavior: "smooth" });
 });

@@ -96,6 +96,15 @@
   font-size: 20px;
   color: #fff;
 }
+.main-visual button:before {
+  content: "\e5db";
+  font-family: "Material Icons";
+  font-size: 25px;
+  border: 0.5px solid #fff;
+  border-radius: 100%;
+  padding: 3px;
+  color: #fff;
+}
 
 .section {
   padding: 100px 0;
